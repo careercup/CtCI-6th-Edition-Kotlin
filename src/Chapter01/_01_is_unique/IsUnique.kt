@@ -8,9 +8,8 @@ fun main(args: Array<String>) {
 class IsUnique {
 
     // O(n) solution
-    fun isUniqueBest(s: String): Boolean {
-        return s.length == s.toSet().size
-    }
+    fun isUniqueBest(s: String) = s.length == s.toSet().size
+
 
     // O(n) solution
     fun isUniqueBetter(s: String): Boolean {
