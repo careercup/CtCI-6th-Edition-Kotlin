@@ -2,7 +2,7 @@ package Chapter01._01_is_unique
 
 
 fun main(args: Array<String>) {
-    println(IsUnique().isUniqueNormal(""))
+    //println(IsUnique().isUniqueNormal(""))
 }
 
 class IsUnique {
