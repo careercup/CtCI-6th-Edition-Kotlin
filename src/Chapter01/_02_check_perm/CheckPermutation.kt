@@ -6,6 +6,8 @@ fun main (args: Array<String>) {
 
 class CheckPermutation {
 
+    // Solutions are case sensitive and white spaces are significant
+
     // O(nlog(n)) solution
     fun checkPermNormal(s1: String, s2: String): Boolean {
         if (s1.length != s2.length)
