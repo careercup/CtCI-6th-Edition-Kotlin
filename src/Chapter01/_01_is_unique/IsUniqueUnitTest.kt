@@ -6,52 +6,30 @@ import kotlin.test.assertEquals
 class IsUniqueUnitTest {
 
     @Test
-    fun testIsUniqueBestEmptyString() {
+    fun testIsUniqueEmptyString() {
         assertEquals(true, IsUnique().isUniqueBest(""))
-    }
-
-    @Test
-    fun testIsUniqueBestUnique(){
-        assertEquals(true, IsUnique().isUniqueBest("pedram"))
-    }
-
-    @Test
-    fun testIsUniqueBestNonUnique(){
-        assertEquals(false, IsUnique().isUniqueBest("test"))
-    }
-
-    @Test
-    fun testIsUniqueBetterEmptyString() {
         assertEquals(true, IsUnique().isUniqueBetter(""))
-    }
-
-    @Test
-    fun testIsUniqueBetterUnique(){
-        assertEquals(true, IsUnique().isUniqueBetter("pedram"))
-    }
-
-    @Test
-    fun testIsUniqueBetterNonUnique(){
-        assertEquals(false, IsUnique().isUniqueBetter("test"))
-    }
-
-    @Test
-    fun testIsUniqueNormalEmptyString() {
         assertEquals(true, IsUnique().isUniqueNormal(""))
     }
 
     @Test
-    fun testIsUniqueNormalUnique(){
+    fun testIsUniqueUnique(){
+        assertEquals(true, IsUnique().isUniqueBest("pedram"))
+        assertEquals(true, IsUnique().isUniqueBetter("pedram"))
         assertEquals(true, IsUnique().isUniqueNormal("pedram"))
     }
 
     @Test
-    fun testIsUniqueNormalNonUnique(){
+    fun testIsUniqueNonUnique(){
+        assertEquals(false, IsUnique().isUniqueBest("test"))
+        assertEquals(false, IsUnique().isUniqueBetter("test"))
         assertEquals(false, IsUnique().isUniqueNormal("test"))
     }
 
     @Test
-    fun testIsUniqueNormalNonUniqueAtEnd(){
+    fun testIsUniqueNotUniqueAtEnd(){
+        assertEquals(false, IsUnique().isUniqueBest("estt"))
+        assertEquals(false, IsUnique().isUniqueBetter("estt"))
         assertEquals(false, IsUnique().isUniqueNormal("estt"))
     }
 
