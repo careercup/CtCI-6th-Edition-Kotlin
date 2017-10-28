@@ -8,24 +8,24 @@ fun main(args: Array<String>) {
 class IsUnique {
 
     // O(n) solution
-    fun isUniqueBest(s: String) = s.length == s.toSet().size
+    fun isUniqueBest(str: String) = str.length == str.toSet().size
 
 
     // O(n) solution
-    fun isUniqueBetter(s: String): Boolean {
+    fun isUniqueBetter(str: String): Boolean {
         val charSet: MutableSet<Char> = mutableSetOf()
-        for (c in s) {
-            if (c in charSet)
+        str.forEach {
+            if (it in charSet)
                 return false
             else
-                charSet.add(c)
+                charSet.add(it)
         }
         return true
     }
 
     // O(nlog(n)) solution (space complexity = O(n))
-    fun isUniqueNormal(s: String): Boolean {
-        val charList: List<Char> = s.toList().sorted()
+    fun isUniqueNormal(str: String): Boolean {
+        val charList: List<Char> = str.toList().sorted()
 
         for ((index, value) in charList.withIndex()) {
             if (index == charList.size - 1)
