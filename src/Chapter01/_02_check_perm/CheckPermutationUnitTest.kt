@@ -3,7 +3,7 @@ package Chapter01._02_check_perm
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-class CheckPermutationTest {
+class CheckPermutationUnitTest {
 
     @Test
     fun testCheckPermEmptyString() {
