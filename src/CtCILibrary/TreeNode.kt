@@ -23,7 +23,7 @@ class TreeNode(var data: Int, var left: TreeNode? = null, var right: TreeNode? =
         }
     }
 
-    private var size: Int = 0
+    private var size: Int = 1
 
     val isBST: Boolean
         get() = kotlin.run {
@@ -76,5 +76,10 @@ class TreeNode(var data: Int, var left: TreeNode? = null, var right: TreeNode? =
     fun print() {
         TODO("Implement BTreePrinter")
     }
+
+    override fun toString(): String {
+        return "TreeNode(data=$data, left=$left, right=$right, parent=$parent, size=$size)"
+    }
+
 
 }
