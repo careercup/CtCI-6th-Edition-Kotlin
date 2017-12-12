@@ -74,12 +74,10 @@ class TreeNode(var data: Int, var left: TreeNode? = null, var right: TreeNode? =
     }
 
     fun print() {
-        TODO("Implement BTreePrinter")
+        Utils.printNode(this)
     }
 
     override fun toString(): String {
-        return "TreeNode(data=$data, left=$left, right=$right, parent=$parent, size=$size)"
+        return "TreeNode(data=$data, left=${left?.toString()}, right=${right?.toString()}, parent=${parent?.data}, size=$size)"
     }
-
-
 }

@@ -4,7 +4,7 @@ import CtCILibrary.*
 import java.util.*
 import kotlin.collections.ArrayList
 
-object QuestionBFS {
+object SolutionBFS {
     @JvmStatic
     fun main(args: Array<String>) {
         val nodes = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)

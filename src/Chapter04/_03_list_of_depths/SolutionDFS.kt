@@ -4,7 +4,7 @@ import CtCILibrary.*
 import java.util.*
 import kotlin.collections.ArrayList
 
-object QuestionDFS {
+object SolutionDFS {
     @JvmStatic
     fun main(args: Array<String>) {
         val array = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)

@@ -2,7 +2,7 @@ package Chapter04._01_route_between_nodes
 
 import java.util.*
 
-object Question {
+object Solution {
     @JvmStatic
     fun main(args: Array<String>) {
         val graph = createGraph()
